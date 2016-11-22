@@ -1,0 +1,224 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.android.riversoflife.WhatWeBelieve">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="48dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beliefs"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            <Button
+                android:text="Bible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bible_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_alignParentLeft="false"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bible_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="God"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/god_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/bible_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/god_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Jesus Christ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jc_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/god_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jc_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="State of Mankind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mankind_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/jc_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mankind_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Salvation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/salvation_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_below="@+id/mankind_btn"
+                android:elevation="12dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/salvation_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Healing Power of God"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/healing_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/salvation_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/healing_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Baptism of the Holy Spirit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/baptism_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/healing_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/baptism_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Sanctification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sanctification_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/baptism_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sanctification_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="The Lord's Supper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/supper_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/sanctification_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/supper_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <Button
+                android:text="Water Baptism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/water_bap_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_below="@+id/supper_btn"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/water_bap_txt"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lightstock_62658_xsmall_matthew_"
+                android:id="@+id/imageView4"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

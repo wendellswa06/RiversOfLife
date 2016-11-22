@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/welcome_id"
+            android:title="Welcome">
+        </item>
+        <item
+            android:id="@+id/ministries_id"
+            android:title="Ministries">
+        </item>
+        <item
+            android:id="@+id/contact_us_id"
+            android:title="Contact Us">
+        </item>
+        <item
+            android:id="@+id/calender_id"
+            android:title="Calender at a Glance">
+        </item>
+        <item
+            android:id="@+id/online_giving_id_id"
+            android:title="Online Giving">
+        </item>
+        <item
+            android:id="@+id/podcast_id"
+            android:title="Podcast">
+        </item>
+        <item
+            android:id="@+id/about_id"
+            android:title="About Rivers"
+            android:checked="false">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about_us_id"
+                    android:title="     About Us">
+                </item>
+                <item
+                    android:id="@+id/our_history_id"
+                    android:title="     Our History">
+                </item>
+                <item
+                    android:id="@+id/our_pastors_id"
+                    android:title="     Our Pastors">
+                </item>
+                <item
+                    android:id="@+id/what_we_believe_id"
+                    android:title="     What We Believe">
+                </item>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:googlemap="http://schemas.android.com/apk/res-auto"
+             tools:context="com.example.android.riversoflife.ContactUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/contact_us_info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/first_last_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First and Last Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:elevation="12dp"/>
+
+            <EditText
+                android:id="@+id/email_address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:elevation="12dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject*"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:paddingStart="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Please leave us a short message"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:elevation="12dp"/>
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:typeface="sans"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/info_layout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Everyone Is Welcome"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sunday_10am_wednesday_7pm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/location_2495_cedar_st_ste_21_23c_holt_mi_48842"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/phone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <fragment
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/map"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="40dp"
+
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
