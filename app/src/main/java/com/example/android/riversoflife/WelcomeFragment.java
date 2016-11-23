@@ -1,10 +1,6 @@
 package com.example.android.riversoflife;
 
 
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -12,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
-import static com.example.android.riversoflife.R.id.imageView;
 
 
 /**
@@ -45,7 +39,7 @@ public class WelcomeFragment extends Fragment
 
         imageView = (ImageView)getView().findViewById(R.id.welcome_image_view_slider);
 
-        final int []imageArray={R.drawable.welcome,R.drawable.oneservice,R.drawable.november_healing,R.drawable.legacy, R.drawable.iconprime, R.drawable.walkers};
+        final int[] imageArray = {R.drawable.welcome, R.drawable.healing_dec, R.drawable.openarmsmen_mod1, R.drawable.iconprime, R.drawable.walkers, R.drawable.legacy};
         final Handler handler = new Handler();
 
 

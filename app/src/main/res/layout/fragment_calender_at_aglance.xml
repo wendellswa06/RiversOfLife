@@ -5,12 +5,11 @@
              tools:context="com.example.android.riversoflife.CalenderAtAGlanceFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <CalendarView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Calender At A Glance"
-        android:gravity="center"
-        android:textSize="35dp"
-        android:textStyle="bold"/>
+        android:id="@+id/calendarView"
+        android:padding="16dp"/>
 
 </FrameLayout>

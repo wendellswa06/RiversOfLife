@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
+import android.widget.Toast;
 
 
 /**
@@ -25,8 +27,28 @@ public class CalenderAtAGlanceFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_calender_at_aglance, container, false);
+        View view = inflater.inflate(R.layout.fragment_calender_at_aglance, container, false);
+
+        return view;
+    }
+
+    public void onViewCreated(View view, Bundle savedInstanceState)
+    {
+        super.onViewCreated(view, savedInstanceState);
+
+        CalendarView calendarView = (CalendarView) view.findViewById(R.id.calendarView);
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
+        {
+
+            @Override
+            public void onSelectedDayChange(CalendarView view, int year, int month,
+                                            int dayOfMonth)
+            {
+                Toast.makeText(getActivity(), "Test", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
     }
 
 }
